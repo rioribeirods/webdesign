@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+header {
+    background-image:url(./src/assets/plateia.jpg);
+    background-position: 50% 40%;
+    height: 15vh;
+    top: 0;
+    position: sticky;
+}
+
+.nav-item {
+    list-style: none;
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    background-color: black;
+    margin: 2em;
+    font-family: 'Uchen', serif;
+}
+
+.nav {
+    width: 60vw;
+    height: 15vh;
+    margin: 0 auto;
+}
+
+
+.footer-item {
+    list-style: none;
+    color: white;
+    font-size: 16px;
+    width: 12vw;
+    background-color: black;
+    padding-top: 1em;
+    margin: 0 auto; 
+}
+
+article {
+    display: inline-block;
+    width: 40vw;
+    height: 70vh;
+    margin-right: 2em;
+    text-align: justify;
+}
+
+main {
+    margin: 3em;
+}
+
+p {
+    font-family: 'Uchen', serif;
+    margin-top: 2em;
+    text-indent: 2em;
+}
+
+.teatro {
+    width: 40vw;
+    height: 552px;
+}
+
+.trupe {
+    width: 30vw;
+    height: 552px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Uchen', serif;
+}
+
+aside {
+    text-align: justify;
+    display: inline-block;
+    width: 30vw;
+}
+
+footer {
+    background-color: black;
+    height: 15vh;
+    font-family: 'Uchen', serif;
+}
