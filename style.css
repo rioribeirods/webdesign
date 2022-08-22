@@ -20,14 +20,14 @@ header {
     list-style: none;
     color: white;
     font-size: 32px;
-    display: inline-block;
-    background-color: black;
+    display: flex;
     margin: 2em;
     font-family: 'Uchen', serif;
 }
 
 .nav {
     width: 60vw;
+    display: flex;
     height: 15vh;
     margin: 0 auto;
 }
@@ -44,15 +44,18 @@ header {
 }
 
 article {
-    display: inline-block;
+    display: flex;
     width: 40vw;
     height: 70vh;
     margin-right: 2em;
     text-align: justify;
+    flex-direction: column;
 }
 
 main {
     margin: 3em;
+    display: flex;
+    flex-direction: row;
 }
 
 p {
@@ -80,12 +83,78 @@ h1 {
 
 aside {
     text-align: justify;
-    display: inline-block;
+    display: flex;
     width: 30vw;
+    flex-direction: column;
 }
 
 footer {
     background-color: black;
     height: 15vh;
     font-family: 'Uchen', serif;
+}
+
+
+@media only screen and (max-width: 760px) {
+    body {
+        width: 100%;
+    }
+
+    nav {
+        height: 20vh;
+    }
+
+    header {
+        height: 20vh;
+        top: 0;
+        position: sticky;
+    }
+
+    .nav-item {
+        list-style: none;
+        color: white;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        margin: 0.5em;
+        font-family: 'Uchen', serif;
+    }
+    
+    .nav {
+        width: 60vw;
+        display: flex;
+        height: 20vh;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+        height: 270vh;
+        width: 100%;
+    }
+    
+    article {
+        height: 150vh;
+        width: 80%;
+    }
+
+    aside {
+        height: 150vh;
+        width: 80%;
+    }
+
+    figure, .teatro, .trupe {
+        width: 80vw;
+    }
+
+    .footer-item {
+        width: 90VW;
+    }
+
+    footer {
+        height: 40vw;
+        display: flex;
+        text-align: center;
+    }
 }
